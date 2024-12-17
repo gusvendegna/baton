@@ -46,7 +46,7 @@ services:
 ```
 Deploy the stack:
 ```bash
-docker stack deploy -c docker-compose.yml monitor-stack
+docker stack deploy -c docker-compose.yml baton
 ```
 
 ---
@@ -76,7 +76,7 @@ Assign labels to your Swarm nodes for primary and secondary roles.
    ```
 3. Observe the monitor logs and ensure the service is reassigned to the secondary node:
    ```bash
-docker service logs monitor-stack_baton
+    docker service logs monitor-stack_baton
    ```
 
 ---
@@ -94,12 +94,6 @@ docker service logs monitor-stack_baton
 npm run build
 ```
 The output will be in the `dist` folder.
-
-### Run Tests
-Add tests using your preferred framework (e.g., Mocha, Jest):
-```bash
-npm test
-```
 
 ---
 
@@ -129,9 +123,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 - [Dockerode](https://github.com/apocas/dockerode) - Docker SDK for Node.js.
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at scale.
-
----
-
-## Contact
-For questions or feedback, feel free to open an issue or reach out via email at `your-email@example.com`.
 
