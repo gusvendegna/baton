@@ -84,10 +84,10 @@ async function monitorSwarm() {
                 console.log(`Primary node "${primaryNode.hostname}" is healthy.`);
             }
 
-            await new Promise((resolve) => setTimeout(resolve, 5000)); // Monitor every 5 seconds
         } catch (err) {
             console.error('Error during monitoring:', err);
         }
+        await new Promise((resolve) => setTimeout(resolve, 5000)); // Monitor every 5 seconds
     }
 }
 
