@@ -1,0 +1,21 @@
+{
+  "name": "baton",
+  "version": "1.0.0",
+  "description": "baton is a way for your docker swarm to have a node-prioritization. Built to help turn normal docker swarm high-availability into a disaster recovery system",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dockerode": "^4.0.2",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.32"
+  }
+}

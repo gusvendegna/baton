@@ -1,0 +1,11 @@
+services:
+  baton:
+    container_name: baton
+    image: baton:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      replicas: 1
+    environment:
+      - PRIMARY_LABEL=primary
+      - SECONDARY_LABEL=secondary
